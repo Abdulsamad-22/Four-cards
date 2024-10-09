@@ -1,0 +1,172 @@
+body{
+    margin: 1rem;
+    background-color: aliceblue;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+@media(max-width: 600px) {
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.125rem;
+    }
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.125rem;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 26.25rem;
+}
+
+.header-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .header-text{
+        max-width: 23.75rem;
+    }
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 0.875rem;
+}
+
+@media(max-width: 600px) {
+    h1{
+        font-size: 1.125rem;
+        max-width: 13.75rem;
+    }
+}
+
+h1 span{
+    font-weight: 600;
+    color: black;
+}
+
+@media(max-width: 600px) {
+    h1 span{
+        font-size: 1.25rem;
+    }
+}
+
+.description-container{
+    font-size: 0.875rem;
+    color: gray;
+    max-width: 25rem;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .description-container{
+        font-size: 0.75rem;
+        max-width: 12.5rem;
+    }
+}
+
+.header-description{
+    margin-top: 0;
+}
+
+.supervisor-card, .team-builder-card, .karma-card, .calculator-card{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 0.75rem;
+    max-width: 17.5rem;
+    min-height: 11.25rem;
+    border-radius: 8px;
+    border-top:  5px solid red;
+    border-width: 5.5px;
+    box-shadow: 0px 6px 4px rgb(189, 189, 189);
+}
+
+@media(max-width: 600px) {
+    .supervisor-card, .team-builder-card, .karma-card, .calculator-card{
+        position: relative;
+        max-width: 11.25rem;
+        min-height: 6.25rem;
+    }
+}
+
+.supervisor-card{
+    border-top:  5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-card{
+    border-top:  5px solid hsl(0, 78%, 62%);
+}
+
+.karma-card{
+    border-top:  5px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card{
+    border-top:  5px solid hsl(212, 86%, 64%);
+}
+
+h2{
+    font-size: 1.25rem;
+    color: rgb(95, 94, 94);
+    margin-top: 0.5rem;
+}
+
+@media(max-width: 600px) {
+    h2{
+        font-size: 0.975rem;
+        margin-top: 0rem;
+    }
+}
+
+.card-description{
+    font-size: 0.875rem;
+    color: rgb(146, 145, 145);
+    max-width: 14.375rem;
+}
+
+@media(max-width: 600px) {
+    .card-description{
+        font-size: 0.75rem;
+    }
+}
+
+.supervisor-icon, .team-builder-icon, .karma-icon, .calculator-icon{
+    max-width: 3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+@media(max-width: 600px) {
+    .supervisor-icon, .team-builder-icon, .karma-icon, .calculator-icon{
+        max-width: 1.25rem;
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+}
